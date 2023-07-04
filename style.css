@@ -1,0 +1,817 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*===============================================================================================================
+
+Table of Content:
+1. Body, General Styling
+2. Layout - Divs, borders, things
+2.1 Img
+2.2 SVGs & Animations
+3. Typography - h1s,h2s,h3s
+4. Links - all five states etc
+5. Navigation
+6. Forms
+
+=================================================================================================================
+
+1. Body, General Stylings*/
+
+body {
+	margin: 0 auto;
+	background-color: var(--background);
+	padding:1em 0 0.5em 0;
+
+}
+:root {
+	--menubackground: #D79298;
+	--cardshade: #3D3E3D;
+	--background: #241044;
+	--envelope: #EFF1F3;
+	--imgcard: #008158;
+	--gooood: #D79298;
+	--palered: #f24131;
+	--polygreen: #2e3532;
+	--murrey: #7E1946;
+	--highlight: #CA1551;
+	--statsbg: #7b9e89;
+	--displayfont: #009FB7;
+	--aboutheading: #009FB7;
+	--sectionwhite: #EFEFF7;
+	--skyblue: #5A61AD;
+}
+
+
+/*=======================================================================*/
+/*2. Layout */
+/*=======================================================================*/
+
+
+header {
+  display: block;
+  width: 100%;
+  height: 80px;
+  
+
+
+}
+
+#nav {
+	display: block;
+	margin-left: 80px;
+
+}
+
+#nav li {
+	display: inline-block;
+	color: white;
+	margin-left: 35px;
+	font-size: 0.8em;
+	
+}
+#nav a li{
+/*	border-bottom: 4px solid var(--highlight);*/
+	padding-bottom: 4px;
+	
+}
+section {
+	width: 100%;
+}
+.white {
+	background-color: var(--sectionwhite);
+	color: var(--background);
+	padding-bottom: 2%;
+
+
+}
+
+.pink {
+	background-color: #D20072;
+	padding-bottom: 5%;
+}
+
+.red {
+	background-color: #F84B42;
+	color: var(--background);
+	padding: 2em 0 5em 0;
+}
+
+.blue {
+	color: white;
+	background-color: var(--skyblue);
+	padding-bottom: 2em;
+
+}
+
+.red p {
+	width: 56%;
+	margin: 0 auto;
+	text-align:center;
+	color: white;
+	font-family: WorkSans;
+}
+.red img {
+	width: 30%;
+	display: block;
+	margin: 0 auto;
+	padding: 1.5em 0 1.5em 0;
+}
+
+
+
+.white ul li p, .white ul li h1 {
+	width: 20%;
+	margin: 0 auto;
+}
+
+
+#logo {
+	width: 132px;
+	margin-right: 420px;
+	position: absolute;
+	margin-left: 5px;
+}
+
+#menu {
+	margin-left: 856px;
+	margin-top: 27px;
+	position: absolute;
+
+}
+#bordertop {
+	border-bottom: 1px solid white; 
+  padding-bottom: 18px;
+  margin: 0 auto;
+  width: 93%;
+  margin-top: -10px;
+}
+
+footer {
+	padding: 4em 0 10em 0;
+}
+
+
+
+/*============================================
+2.1 IMGs
+========================================================*/
+.indigo {
+	position: relative;
+	z-index: 4;
+}
+.pilule {
+	position: absolute;
+	z-index: 1;
+}
+
+#pilula1 {
+	width: 30%;
+	top: 35%;
+	right: 36%;
+}
+#pilula2 {
+	width: 22%;
+	top: 0%;
+	right: 0%
+}
+
+
+#roundedbg {
+	position: relative;
+	z-index: 3;
+	margin-top: 10em;
+	padding: 4em;
+}
+
+.roundedbg2 {
+	position: relative;
+	z-index: 3;
+	margin-top: 10em;
+	padding: 4em;
+}
+
+#roundedbtn {
+	width: 270px;
+	position: relative;
+	z-index: 4;
+	margin-left: 47.5em;
+	margin-top: 2em;
+}
+
+#casuta1, #casuta2, #casuta3 {
+	width: 350px;
+	position: relative;
+	z-index: 4;
+	margin-left: 3.8em;
+	margin-top: 5em;
+	margin-bottom: 1.5em;
+
+}
+.bubbles {
+	padding: 4em;
+	background-color: white;
+	border-radius: 2em;
+	display: inline-block;
+	width: 25%;
+	margin-left: 8.3%;
+	padding-bottom: 8.5em;
+}
+.figures img {
+	width: 35%;
+}
+
+#sittingpen {
+	width: 21%;
+	position: absolute;
+	top: 530%;
+	left: 4%;
+}
+/*============================================
+2.2 SVGs & Animations
+========================================================*/
+
+
+#arrow1 {
+	position: absolute;
+	left: 927.5px;
+	top: 56.5px;
+}
+/*============================================================================*/
+/*3. Typography*/
+/*=======================================================================*/
+
+@font-face {
+	font-family: Eskool-Regular;
+	src: url("/fonts/Eskool-Regular.ttf");
+}
+@font-face {
+	font-family: Plein-Variable;
+	src: url("/fonts/Plein-Variable.ttf"), url("fonts/Plein-VariableItalic.ttf");
+}
+@font-face {
+	font-family: PublicSans-Variable;
+   src: url("/fonts/PublicSans-Variable.ttf"), url("fonts/PublicSans-VariableItalic.ttf");
+}
+@font-face {
+	font-family: PPPangramSansRounded;
+   src: url("fonts/PPPangramSansRounded-Medium.otf"),  url("fonts/PPPangramSansRounded-CompactRegular.otf"), url("/fonts/PPPangramSansRounded-CompactExtralightReclined.otf"),  url("fonts/PPPangramSansRounded-Medium.otf");
+}
+@font-face {
+	font-family: GeneralSans;
+   src: url("fonts/GeneralSans-Variable.ttf"),  url("fonts/GeneralSans-VariableItalic.ttf");
+}
+@font-face {
+	font-family: WorkSans;
+   src: url("fonts/WorkSans-VariableFont_wght.ttf"),  url("fonts/WorkSans-Italic-VariableFont_wght.ttf");
+}
+
+
+body {
+   font-family: PublicSans-Variable, Plein-Variable, Gambetta, Helvetica, sans-serif;
+   font-size: 1.2em;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: 700;
+	margin-bottom: 5px;
+  font-family: WorkSans;
+	color: white;
+	margin: 0 auto;
+	width: 50%;
+	margin-top: 14%;
+}
+.white h1 {
+	color: var(--background);
+	font-weight: 600;
+}
+h2 {
+	font-size: 3em;
+	font-family: PPPangramSansRounded;
+	font-weight: 400;
+	margin-bottom: 5px;
+	width: 11em;
+	color: var(--background);
+	position: relative;
+	z-index: 5;
+}
+
+#hai {
+	position: relative;
+	z-index: 4;
+	margin-top: -9.05em;
+	margin-left: 3em;
+}
+#invata {
+	position: relative;
+	font-family: PPPangramSansRounded;
+	color: var(--background);
+	z-index: 4;
+	margin-top: 1.5em;
+	margin-left: 5.6em;
+	width: 20em;
+}
+
+#prev {
+	position: relative;
+	z-index: 4;
+	margin-top: -9.05em;
+	margin-left: 3em;
+}
+#inv {
+	position: relative;
+	font-family: PPPangramSansRounded;
+	color: var(--background);
+	z-index: 4;
+	margin-top: 1.5em;
+	margin-left: 5.6em;
+	width: 18em;
+}
+
+#preventia {
+	position: relative;
+	z-index: 4;
+	margin-top: -17.05em;
+	margin-left: 5em;
+	width: 450px;
+	color: var(--background);
+	font-family: PPPangramSansRounded;
+}
+#contraceptia {
+	position: relative;
+	font-family: GeneralSans;
+	z-index: 4;
+	margin-top: 1.5em;
+	margin-left: 8em;
+	width: 23em;
+}
+#contraceptia2 {
+	position: relative;
+	font-family: GeneralSans;
+	z-index: 4;
+	margin-top: -18em;
+	margin-left: 38em;
+	width: 23em;
+}
+
+.descriere {
+	color: var(--background);
+	font-family: WorkSans;
+	font-size: 1em;
+	font-weight: 500;
+	display: inline;
+}
+
+#descriere2 {
+	margin-left: 12.5%;
+	position: relative;
+  top: 20%;
+	z-index: 1;
+}
+
+#descriere3 {
+	display: inline-block;
+	margin-left: 13%;
+	width: 25%;
+  position: absolute;
+}
+
+#descriere1 {
+	margin-left: 8%;
+	margin-top: 3%;
+	position: relative;
+	z-index: 1;
+}
+
+#descrieri {
+	position: relative;
+}
+
+
+.descriere em {
+	font-weight: 1000;
+}
+
+
+
+
+h3 {
+	font-size: 0.8em;
+	color: white;
+	font-family: WorkSans;
+	line-height: 1.2;
+	font-weight: 300;
+	margin-bottom: 5px;
+	text-align: left;
+	margin:0 auto;
+	width: 30%;
+	margin-top: 1.1em;
+}
+
+p {
+	width: 600px;
+	line-height: 1.5;
+	justify-content: left;
+	text-align: left;
+	font-family: GeneralSans;
+}
+
+
+a {
+	color: var(--palered);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--background);
+}
+
+.backhome {
+	padding-top: 100px;
+	margin-left: 680px;
+	font-weight: 300;
+	font-size: 1.5em;
+}
+a em {
+	font-weight: 800;
+}
+a em:hover {
+	color: orange;
+}
+em {
+	color: var(--highlight);
+}
+
+
+i {
+	font-style: italic;
+}
+
+.maimult {
+	color: white;
+	background-color: var(--highlight);
+	font-family: WorkSans;
+	font-size: 0.75em;
+	padding: 1em;
+	margin:10% 10% 10% 42.5%;
+	display: block;
+	width: 5%;
+	margin-top: 1.3em;
+	border-radius: 2em;
+	padding: 1em 2em 1em 2em;
+
+}
+#maimult2 {
+	margin-top: 4em;
+	margin-bottom: 4em;
+	width: 10%;
+
+}
+#maimult3 {
+	margin-top: 4em;
+	margin-bottom: 4em;
+	width: 10%;
+	margin-left: 42%;
+	background-color: #D10172;
+}
+
+#maimult4 {
+	margin-top: 4em;
+	margin-bottom: 4em;
+	width: 7.7%;
+	margin-left: 42%;
+	background-color: var(--background);
+}
+
+#maimult4:hover {
+	color: pink;
+}
+
+#ce {
+  margin-top: 0%;
+  padding-top: 8%;
+  padding-left: 27%;
+  color: #D20072;
+}
+
+.whiteh1 {
+	margin-top: 0;
+	padding-top: 8%;
+  padding-left: 9%;
+}
+
+#intrebari {
+	padding: 1em 0 4em 0 ;
+	width: 20%;
+}
+.inbubble {
+	color: var(--background);
+	position: absolute;
+	font-weight: 400;
+	font-size: 1em;
+}
+#autor1 {
+	left: 13%;
+	top: 444%;
+}
+#autor2 {
+	left: 59%;
+	top: 444%;
+}
+#quote1 {
+	left: 12.5%;
+	top: 459%;
+	font-size: 0.8em;
+	width: 22%;
+}
+#quote2 {
+	left: 58.5%;
+	top: 459%;
+	font-size: 0.8em;
+	width: 22%;
+}
+
+#tu {
+	width: 50%;
+	font-size: 2.5em;
+	font-weight: 600;
+}
+
+#rightsreserved {
+	width: 90%;
+	color: white;
+	margin-top: 17em;
+	margin-left: 8.6em;
+	font-size: 0.5em;
+	border-top: 1px solid #D20072;
+}
+/*============================================================================*/
+/*4. Links*/
+/*=======================================================================*/
+
+a:link {
+
+}
+
+a:visited {
+
+}
+
+a:active {
+
+}
+#nav a li:hover{
+	color: var(--highlight);
+}
+
+
+
+/*============================================================================*/
+/*5.Burger Nav*/
+/*=======================================================================*/
+
+/* NAV */
+/*nav {
+	margin: 0 0 1.5em 0;
+}*/
+
+/* menu toggle */
+/*nav #menu-toggle {
+	display: none;
+}
+nav .toggle {
+	display: block;
+	padding: .2em 10%;
+	font-size: 1.1em;
+	font-weight: 400;
+	color: var(--gooood);
+	background: var(--gooood);
+	border: none;
+}
+
+nav .toggle:before {
+	content: ' \25B2 ';
+	font-weight: 600;
+	margin: .4em .6em 0 0;
+	font-size: .9em;
+	line-height: 1;
+	color: #191a21;
+	display: inline-block;
+	float: left;
+	transition: all 0.25s ease-out;
+}
+nav #menu-toggle:checked + .toggle::before {
+	content: ' \25BC ';
+}
+
+nav .toggle:hover, nav .toggle:active, nav .toggle:focus {
+	background: var(--highlight);
+	color: #272a31;
+	cursor: pointer;
+}
+
+nav #menu-toggle:checked + .toggle + ul {
+	display: block;
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	display: none;
+}
+
+nav ul li {
+	margin: 0;
+}
+nav ul li a {
+	font-size: 1.2em;
+	display: block;
+	padding: .2em 10%;
+	text-decoration: none;
+	color: #5E6E6D;
+	-webkit-transition: all .3s ease-in-out;  
+	-moz-transition: all .3s ease-in-out;  
+	-o-transition: all .3s ease-in-out;  
+	transition: all .3s ease-in-out;
+}
+nav ul li a:link, nav ul li a:visited {
+	background: none;
+}
+nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
+	background: #DB5E00;
+	color: #fff;
+
+}
+
+nav ul li.cur a:link, nav ul li.cur a:visited {
+	color: orange;
+}
+nav ul li.cur a:hover, nav ul li.cur a:active, nav ul li.cur a:focus {
+	background: rgba(132, 203, 252, 1.000);
+	color: #000;
+}
+*/
+
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+.white ul li {
+	display: inline block;
+}
+ }
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+ 
+@media all and (min-width: 480px) and (max-width: 768px) { }
+ 
+@media all and (max-width: 480px) { }
+ 
+/*------------------------------------------
+  Foundation Media Queries 
+   http://foundation.zurb.com/docs/media-queries.html
+--------------------------------------------*/
+ 
+/* Small screens - MOBILE */
+@media only screen { } /* Define mobile styles - Mobile First */
+ 
+@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+ 
+/* Medium screens - TABLET */
+@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+ 
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+ 
+/* Large screens - DESKTOP */
+@media only screen and (min-width: 64.063em) { 
+
+.white ul{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 5em;
+}
+.white ul li {
+	display: block;
+	padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+
+
+}
+
+.white ul li p {
+	width: 15em;
+	text-align: center;
+
+
+}
+.white ul li h1 {
+	text-align: center;
+	margin-left: 1.6em;
+
+}
+} /* min-width 1025px, large screens */
+ 
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+} /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+ 
+/* XLarge screens */
+@media only screen and (min-width: 90.063em) { 
+} /* min-width 1441px, xlarge screens */
+ 
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+ 
+/* XXLarge screens */
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */
+ 
+/*------------------------------------------*/
+ 
+ 
+ 
+/* Portrait */
+@media screen and (orientation:portrait) { /* Portrait styles here */ }
+/* Landscape */
+@media screen and (orientation:landscape) { /* Landscape styles here */ }
+ 
+ 
+/* CSS for iPhone, iPad, and Retina Displays */
+ 
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+}
+ 
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+}
+ 
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+} 
+ 
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+}
+ 
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {
+}
+ 
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {
+}
+
+
